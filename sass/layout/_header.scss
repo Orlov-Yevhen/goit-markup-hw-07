@@ -1,19 +1,13 @@
-.header-container {
+.header__container {
   display: flex;
 }
 
-.header-nav {
-  display: flex;
-  align-items: center;
-}
-
-.header-adress {
+.header__nav {
   display: flex;
   align-items: center;
-  margin-left: auto;
 }
 
-.header-logo {
+.header__logo {
   margin-right: 93px;
   font-family: Raleway;
   font-weight: 700;
@@ -23,15 +17,15 @@
   color: #000000;
 }
 
-.logo-web {
+.header__logo--web {
   color: var(--accent-color);
 }
 
-.header-item:not(:last-child) {
+.header__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-list {
+.header__list {
   display: flex;
   font-weight: 500;
   font-size: 14px;
@@ -40,7 +34,7 @@
   color: var(--second-title-color);
 }
 
-.header-link {
+.header__link {
   transition: color 250ms var(--cubic-bezier);
 
   position: relative;
@@ -60,7 +54,7 @@
   }
 }
 
-.header-link.current {
+.header__link.current {
   color: var(--accent-color);
 
   &::after {
@@ -75,11 +69,17 @@
   }
 }
 
-.header-contacts:not(:last-child) {
+.header__adress {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header__contacts:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-mail {
+.header__mail {
   transition: color 250ms var(--cubic-bezier);
 
   font-style: normal;
@@ -101,18 +101,18 @@
   }
 }
 
-.header-mail-icons {
+.header__mail--icons {
   transition: fill 250ms var(--cubic-bezier);
   fill: var(--main-text-color);
   margin-right: 10px;
 
-  .header-mail:hover &,
-  .header-mail:focus & {
+  .header__mail:hover &,
+  .header__mail:focus & {
     fill: var(--accent-color);
   }
 }
 
-.header-tel {
+.header__tel {
   transition: color 250ms var(--cubic-bezier);
 
   font-style: normal;
@@ -134,13 +134,13 @@
   }
 }
 
-.header-tel-icons {
+.header__tel--icons {
   transition: color 250ms var(--cubic-bezier);
   fill: var(--main-text-color);
   margin-right: 10px;
 
-  .header-tel:hover &,
-  .header-tel:focus & {
+  .header__tel:hover &,
+  .header__tel:focus & {
     fill: var(--accent-color);
   }
 }

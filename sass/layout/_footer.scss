@@ -4,12 +4,12 @@ footer {
   padding-bottom: 60px;
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
 
-.footer-logo {
+.footer__logo {
   display: block;
   margin-bottom: 20px;
   font-family: Raleway;
@@ -20,7 +20,7 @@ footer {
   color: var(--white-color);
 }
 
-.logo-web {
+.footer__logo--web {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -29,7 +29,7 @@ footer {
   color: var(--accent-color);
 }
 
-.footer-address a {
+.footer__address a {
   transition: color 250ms var(--cubic-bezier);
 
   &:hover,
@@ -38,11 +38,11 @@ footer {
   }
 }
 
-.footer-items:not(:last-child) {
+.footer__items:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-map {
+.footer__map {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -51,7 +51,7 @@ footer {
   color: var(--white-color);
 }
 
-.footer-mail {
+.footer__mail {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -60,7 +60,7 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-tel {
+.footer__tel {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -69,13 +69,13 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-conect {
+.footer__conect {
   display: flex;
   flex-direction: column;
   margin-left: 70px;
 }
 
-.footer-title {
+.footer__title {
   margin-bottom: 20px;
 
   font-style: normal;
@@ -87,7 +87,7 @@ footer {
   color: var(--white-color);
 }
 
-.footer-social-list {
+/* .footer-social-list {
   display: flex;
   align-items: center;
 }
@@ -104,6 +104,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+
   transition: background-color 250ms var(--cubic-bezier);
 
   &:hover,
@@ -114,13 +115,21 @@ footer {
 
 .footer-social-icon {
   fill: var(--white-color);
+} */
+
+.social__link--color {
+  background-color: #43444d;
 }
 
-.join {
+.social__icon--color {
+  fill: var(--white-color);
+}
+
+.footer-join {
   margin-left: 93px;
 }
 
-.join-text {
+.footer-join__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -131,11 +140,11 @@ footer {
   margin-bottom: 20px;
 }
 
-.join-form {
+.footer-join__form {
   display: flex;
 }
 
-.join-email {
+.footer-join__email {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -149,16 +158,17 @@ footer {
   padding: 15px 16px;
 }
 
-.join-email:placeholder-shown {
+.footer-join__email:placeholder-shown {
   top: 0;
   left: 20px;
 }
 
-.join-submit {
+.footer-join__submit {
   width: 200px;
   height: 50px;
   background: var(--accent-color);
   border-radius: 4px;
+  border: 1px solid transparent;
 
   font-weight: 700;
   font-size: 16px;
@@ -180,6 +190,6 @@ footer {
   }
 }
 
-.join-icone {
+.footer-join__icone {
   margin-left: 10px;
 }
