@@ -19,7 +19,7 @@
   display: flex;
 }
 
-.team__photo {
+.team__item {
   width: 270px;
   background: var(--white-color);
 
@@ -28,7 +28,7 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.team__photo:not(:last-child) {
+.team__item:not(:last-child) {
   margin-right: 30px;
 }
 

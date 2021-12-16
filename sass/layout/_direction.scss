@@ -17,11 +17,11 @@
   display: flex;
 }
 
-.direction__image {
+.direction__item {
   position: relative;
 }
 
-.direction__image:not(:last-child) {
+.direction__item:not(:last-child) {
   margin-right: 30px;
 }
 
